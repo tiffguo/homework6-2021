@@ -161,35 +161,37 @@ header{
   #logo {
     animation: none;
   }
-
+}
 
 @media print { 
 
-  /*Requirement 13*/
-  body {
+  body{
     background-image: none;
   }
-  /*Requirement 14*/
-  nav {
-    width: 100%;
+  
+  nav{
+    width: 100%
   }
-  /*Requirement 15*/
-  .nav_links {
-    display: flex;
+  
+  header{
+    flex-direction: column;
+  }
+
+  .nav_links{
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
-  /*Requirement 16*/
+
   .price {
     align-items: flex-end;
   }
-  /*Requirement 17*/
+
   .package {
     border: 2px solid #45ADAD;
     flex-basis: 200px;
   }
-  /*Requirement 18*/
-  #gallery, .gallery {
+
+  .gallery, #gallery {
     display: none;
   }
 }
